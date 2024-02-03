@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    
+}
+
+.header h1 {
+    text-transform: uppercase;
+}
+
+.image-container {   
+    clip-path: circle(50% at 50% 50%);
+    background-image: url('../img/profile1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 450px;
+    margin: 2rem auto;  
+}
+
+.navigation ul li {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 16rem;
+    margin: 3rem 0;
+}
+
+.navigation ul li:not(:last-child) {
+    margin-right: 6rem;
+}
+
+
+.main-container {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.main-container div {
+    margin-bottom: 2rem;
+}
+
+.main-container h1 {
+    margin-bottom: 5rem;
+}
+
+.main-container p {
+    text-align: justify;
+}
+
+.footer {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.footer ul {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 2rem;
+}
+
+.footer ul a {
+    color: #777;
+    text-decoration: none;
+}
+
+
+@media (min-width: 480px) {
+
+    .tablet {
+        display: none;
+    }
+
+    .laptop {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .container {
+        background-color: rgba(156, 236, 127, 0.645);
+        color: rgb(120, 69, 32);
+        width: 100%;
+        border: 3px solid rgb(156, 236, 127);
+    }
+
+    .image-container {
+        background-image: url('../img/profile1.jpg');
+    }
+
+
+    .navigation ul li {
+        display: block;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navigation ul li:not(:last-child) {
+        border-bottom: none;
+    }
+    
+
+    .main-container {
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .main-container h1 {
+        margin: 1rem auto;
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+
+    .smartphone {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+
+    .container {
+        background-color: rgba(94, 247, 214, 0.392);
+        color: rgb(93, 67, 75);
+        width: 100%;
+        border: 3px solid rgb(94, 247, 214);
+    }
+
+    .image-container {
+        background-image: url('../img/profile2.jpg');
+    }
+
+
+    .navigation ul li {
+        display: block;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navigation ul li:not(:last-child) {
+        border-bottom: none;
+    }
+    
+
+    .main-container {
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .main-container h1 {
+        margin: 1rem auto;
+    }
+}
+
+
+@media (min-width: 1024px){
+        
+    .laptop {
+        display: block;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .container {
+        background-color: rgba(234, 166, 232, 0.768);
+        color: rgb(106, 87, 63);
+        width: 100%;
+        border: 3px solid rgb(218, 116, 215);
+    }
+
+    .image-container {
+        background-image: url('../img/profile3.jpg');
+    }
+
+
+    .navigation ul li {
+        display: block;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navigation ul li:not(:last-child) {
+        border-bottom: none;
+    }
+    
+
+    .main-container {
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .main-container h1 {
+        margin: 1rem auto;
+    }
+}
+
+
+@media (min-width: 1200px){
+
+    /*muuda image-container taustapilti*/
+    /*muuda dokumendi taustavärvi*/
+    /*muuda dokumendi tekstivärvi*/
+    /*ära unusta ka raamjoonesid*/
+    .laptop {
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    .container {
+        background-color: rgba(114, 132, 193, 0.567);
+        color: rgb(64, 59, 59);
+        width: 100%;
+        border: 3px solid rgb(110, 129, 193);
+    }
+
+    .image-container {
+        background-image: url('../img/profile4.jpg');
+    }
+
+    .header h1 {
+        margin: 3rem auto;
+    }
+    .navigation ul li {
+        display: inline-block;
+        width: 16rem;
+    }
+    
+    .navigation ul li:not(:last-child) {
+        border-bottom: 1px solid black;
+        margin-right: 4rem;
+    }
+
+    .main-container {
+        width: 75%;
+    }
+
+}
